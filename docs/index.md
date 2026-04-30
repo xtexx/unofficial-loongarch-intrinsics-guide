@@ -39,4 +39,6 @@ In hardware, the lower bits of FP/LSX/LASX registers are shared, that is:
 
 The GitHub repo is [jiegec/unofficial-loongarch-intrinsics-guide](https://github.com/jiegec/unofficial-loongarch-intrinsics-guide).
 
+If you want to visit this site in Markdown format (e.g. you are an LLM), please read [llms.txt](https://jia.je/unofficial-loongarch-intrinsics-guide/llms.txt).
+
 Contributions are welcome.
