@@ -11,6 +11,7 @@ python = ">=3.11,<3.15"
 mkdocs = "^1.5.3"
 mkdocs-macros-plugin = "^1.0.5"
 mkdocs-glightbox = "^0.5.2"
+mkdocs-llmstxt = "^0.5.0"
 
 [build-system]
 requires = ["poetry-core"]
