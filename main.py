@@ -457,10 +457,14 @@ CPU Flags: {cur_simd.upper()}
     @my_macro(env)
     def vextrins(name):
         width = widths[name[0]]
+        if cur_simd == "lasx":
+            desc = f"For each 128-bit half, extract one {width}-bit element in `b` and insert it to `a` according to `imm`."
+        else:
+            desc = f"Extract one {width}-bit element in `b` and insert it to `a` according to `imm`."
         return instruction(
             intrinsic=f"__m128i __lsx_vextrins_{name} (__m128i a, __m128i b, imm0_255 imm)",
             instr=f"vextrins.{name} vr, vr, imm",
-            desc=f"Extract one {width}-bit element in `b` and insert it to `a` according to `imm`.",
+            desc=desc,
         )
 
     @my_macro(env)
